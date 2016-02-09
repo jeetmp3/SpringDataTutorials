@@ -14,6 +14,14 @@ hibernate {
     flush.mode = 'manual' // OSIV session flush mode outside of transactional context
 }
 
+mongo {
+    dataSource {
+        hostName = "localhost"
+        port = 27017
+        database = "demo-spring-data"
+    }
+}
+
 // environment specific settings
 environments {
     development {
