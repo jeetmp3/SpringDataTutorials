@@ -115,5 +115,5 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 
-    debug 'org.springframework.data'
+//    debug 'org.springframework.data'
 }
