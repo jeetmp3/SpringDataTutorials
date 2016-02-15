@@ -47,6 +47,9 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
+        // Intentionally declared here because spring data uses 4.1 and in 4.1.8 an important security issue fixed
+        // http://stackoverflow.com/questions/33275830/spring-data-mongodb-failed-with-in-query
+        compile 'org.springframework:spring-beans:4.1.8.RELEASE'
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
